@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minimal Website</title>
+    <title>Sri Vijaya Ganapathi Temple</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap">
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">Logo</div>
+            <div class="logo">Sri Vijaya Ganapathi Temple</div>
             <div class="hamburger" onclick="toggleMenu()">
                 <div class="line"></div>
                 <div class="line"></div>
@@ -18,28 +19,56 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="#rituals">Rituals</a></li>
+                <li><a href="#events">Events</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="home">
-            <h1>Welcome to the Minimal Website</h1>
-            <p>This is the homepage content.</p>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>Welcome to Sri Vijaya Ganapathi Temple</h1>
+                <p>A sacred place for peace and blessings</p>
+                <a href="#about" class="btn">Learn More</a>
+            </div>
         </section>
-        <section id="about">
-            <h1>About Us</h1>
-            <p>Information about the website or company.</p>
+
+        <section id="about" class="about-section">
+            <h1>About the Temple</h1>
+            <p>Sri Vijaya Ganapathi Temple is a place of devotion, a spiritual sanctuary that offers peace and divine blessings. Experience the rich cultural heritage, the beautiful rituals, and the divine aura of Lord Ganesha.</p>
         </section>
-        <section id="services">
-            <h1>Our Services</h1>
-            <p>Details of the services offered.</p>
+
+        <section id="rituals" class="rituals-section">
+            <h1>Rituals & Services</h1>
+            <div class="service-card">
+                <h2>Morning Abhishekam</h2>
+                <p>Experience the sacred morning Abhishekam of Lord Ganesha.</p>
+            </div>
+            <div class="service-card">
+                <h2>Special Poojas</h2>
+                <p>Participate in special poojas conducted for health, prosperity, and wellbeing.</p>
+            </div>
         </section>
-        <section id="contact">
+
+        <section id="events" class="events-section">
+            <h1>Upcoming Events</h1>
+            <div class="event">
+                <h2>Ganesh Chaturthi</h2>
+                <p>Celebrate the auspicious occasion of Ganesh Chaturthi with grandeur at the temple.</p>
+            </div>
+            <div class="event">
+                <h2>Navaratri Festival</h2>
+                <p>Join us for the vibrant Navaratri festival with devotional music and prayers.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
             <h1>Contact Us</h1>
-            <p>Contact information goes here.</p>
+            <p>Address: Sri Vijaya Ganapathi Temple, Temple Street, City Name</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Email: info@ganapathitemple.com</p>
         </section>
     </main>
 
