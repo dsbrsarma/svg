@@ -3,80 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sri Vijaya Ganapathi Temple</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap">
+    <title>Dynamic Website with Side Navigation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(to right, #6dd5ed, #2193b0);
+            color: white;
+            scroll-behavior: smooth;
+        }
+
+        /* Sticky Navigation Bar */
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav a:hover {
+            background-color: #444;
+            border-radius: 5px;
+        }
+
+        /* Side Navigation Bar */
+        .side-nav {
+            position: fixed;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px 0 0 10px;
+            padding: 20px;
+            z-index: 1000;
+        }
+
+        .side-nav a {
+            display: block;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            margin: 5px 0;
+            text-align: center;
+        }
+
+        .side-nav a:hover {
+            background-color: #444;
+            border-radius: 5px;
+        }
+
+        /* Sections Styling */
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        section h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            max-width: 600px;
+        }
+
+        /* Background Visuals for Sections */
+        #home {
+            background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        #about {
+            background-image: url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        #services {
+            background-image: url('https://images.unsplash.com/photo-1531177072789-b1a5853925e7');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        #contact {
+            background-image: url('https://images.unsplash.com/photo-1497436072909-60f360e1d4b1');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Content Overlays */
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 50px;
+            border-radius: 10px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            color: white;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">Sri Vijaya Ganapathi Temple</div>
-            <div class="hamburger" onclick="toggleMenu()">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#rituals">Rituals</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="home" class="hero-section">
-            <div class="hero-content">
-                <h1>Welcome to Sri Vijaya Ganapathi Temple</h1>
-                <p>A sacred place for peace and blessings</p>
-                <a href="#about" class="btn">Learn More</a>
-            </div>
-        </section>
+    <!-- Sticky Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-        <section id="about" class="about-section">
-            <h1>About the Temple</h1>
-            <p>Sri Vijaya Ganapathi Temple is a place of devotion, a spiritual sanctuary that offers peace and divine blessings. Experience the rich cultural heritage, the beautiful rituals, and the divine aura of Lord Ganesha.</p>
-        </section>
+    <!-- Side Navigation Bar -->
+    <div class="side-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
 
-        <section id="rituals" class="rituals-section">
-            <h1>Rituals & Services</h1>
-            <div class="service-card">
-                <h2>Morning Abhishekam</h2>
-                <p>Experience the sacred morning Abhishekam of Lord Ganesha.</p>
-            </div>
-            <div class="service-card">
-                <h2>Special Poojas</h2>
-                <p>Participate in special poojas conducted for health, prosperity, and wellbeing.</p>
-            </div>
-        </section>
+    <!-- Home Section -->
+    <section id="home">
+        <div class="overlay">
+            <h1>Welcome to Our Website</h1>
+            <p>Discover the perfect blend of technology and creativity. We bring your ideas to life.</p>
+        </div>
+    </section>
 
-        <section id="events" class="events-section">
-            <h1>Upcoming Events</h1>
-            <div class="event">
-                <h2>Ganesh Chaturthi</h2>
-                <p>Celebrate the auspicious occasion of Ganesh Chaturthi with grandeur at the temple.</p>
-            </div>
-            <div class="event">
-                <h2>Navaratri Festival</h2>
-                <p>Join us for the vibrant Navaratri festival with devotional music and prayers.</p>
-            </div>
-        </section>
+    <!-- About Section -->
+    <section id="about">
+        <div class="overlay">
+            <h1>About Us</h1>
+            <p>We are a team of creative thinkers and innovative doers. Our mission is to deliver excellence in every project we undertake.</p>
+        </div>
+    </section>
 
-        <section id="contact" class="contact-section">
+    <!-- Services Section -->
+    <section id="services">
+        <div class="overlay">
+            <h1>Our Services</h1>
+            <p>We offer a range of services including web development, graphic design, and digital marketing to help grow your business.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="overlay">
             <h1>Contact Us</h1>
-            <p>Address: Sri Vijaya Ganapathi Temple, Temple Street, City Name</p>
-            <p>Phone: +123 456 7890</p>
-            <p>Email: info@ganapathitemple.com</p>
-        </section>
-    </main>
+            <p>Have a question or need assistance? Reach out to us and we'll be happy to help.</p>
+        </div>
+    </section>
 
-    <script>
-        function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('active');
-        }
-    </script>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Dynamic Website. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
