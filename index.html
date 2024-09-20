@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
+    <title>Modern Dynamic Website</title>
     <style>
         * {
             margin: 0;
@@ -16,9 +16,10 @@
             line-height: 1.6;
             background: linear-gradient(to right, #6dd5ed, #2193b0);
             color: white;
+            scroll-behavior: smooth;
         }
 
-        /* Sticky Top Navigation Bar */
+        /* Sticky Navigation Bar */
         nav {
             position: sticky;
             top: 0;
@@ -43,32 +44,7 @@
             border-radius: 5px;
         }
 
-        /* Right Side Navigation Bar */
-        .side-nav {
-            position: fixed;
-            right: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            z-index: 1000;
-        }
-
-        .side-nav a {
-            color: white;
-            padding: 10px;
-            margin-bottom: 5px;
-            text-decoration: none;
-            text-align: center;
-        }
-
-        .side-nav a:hover {
-            background-color: #444;
-            border-radius: 5px;
-        }
-
+        /* Sections Styling */
         section {
             height: 100vh;
             display: flex;
@@ -87,7 +63,7 @@
             max-width: 600px;
         }
 
-        /* Home Section Background */
+        /* Background Visuals for Sections */
         #home {
             background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0');
             background-size: cover;
@@ -95,7 +71,35 @@
             background-attachment: fixed;
         }
 
-        /* Footer */
+        #about {
+            background-image: url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        #services {
+            background-image: url('https://images.unsplash.com/photo-1531177072789-b1a5853925e7');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        #contact {
+            background-image: url('https://images.unsplash.com/photo-1497436072909-60f360e1d4b1');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Content Overlays */
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 50px;
+            border-radius: 10px;
+        }
+
+        /* Footer Styling */
         footer {
             background-color: rgba(0, 0, 0, 0.8);
             padding: 20px;
@@ -105,37 +109,58 @@
             width: 100%;
             color: white;
         }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
     </style>
 </head>
 <body>
 
-    <!-- Top Sticky Navigation -->
+    <!-- Sticky Navigation Bar -->
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
     </nav>
 
-    <!-- Side Navigation (Right Side) -->
-    <div class="side-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-    </div>
-
-    <!-- Main Content Section -->
+    <!-- Home Section -->
     <section id="home">
-        <div>
-            <h1>Welcome to Our Home Page</h1>
-            <p>Discover the perfect blend of technology and creativity. Explore our services and know more about us.</p>
+        <div class="overlay">
+            <h1>Welcome to Our Website</h1>
+            <p>Discover the perfect blend of technology and creativity. We bring your ideas to life.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="overlay">
+            <h1>About Us</h1>
+            <p>We are a team of creative thinkers and innovative doers. Our mission is to deliver excellence in every project we undertake.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="overlay">
+            <h1>Our Services</h1>
+            <p>We offer a range of services including web development, graphic design, and digital marketing to help grow your business.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="overlay">
+            <h1>Contact Us</h1>
+            <p>Have a question or need assistance? Reach out to us and we'll be happy to help.</p>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Modern Dynamic Website. All rights reserved.</p>
+        <p>&copy; 2024 Dynamic Website. All rights reserved.</p>
     </footer>
 
 </body>
