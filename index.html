@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Vijaya Ganapathi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(to right, #6dd5ed, #2193b0);
+            color: white;
+            scroll-behavior: smooth;
+        }
+
+        /* Sticky Navigation Bar */
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav a:hover {
+            background-color: #444;
+            border-radius: 5px;
+        }
+
+        /* Sections Styling */
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        section h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            max-width: 600px;
+        }
+
+        /* Background Visuals for Sections */
+        #home {
+            background-image: url("images/backgrounds/home.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+		
+		#announcements {
+            background-image: url("images/backgrounds/announcements.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+		}
+		
+		
+		#events {
+            background-image: url("images/backgrounds/events.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+		}
+		
+		#aniversary {
+            background-image: url("images/backgrounds/aniversary.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+		}
+		
+		#navratri {
+            background-image: url("images/backgrounds/navratri.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+		}
+		
+		#homam {
+            background-image: url("images/backgrounds/homam.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+		}
+		
+		
+        #about {
+            background-image: url("images/backgrounds/about.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        #donations {
+            background-image: url("images/backgrounds/donations.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        #contact {
+            background-image: url("images/backgrounds/contact.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Content Overlays */
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 50px;
+            border-radius: 10px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            color: white;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#announcements">Announcements</a>
+        <a href="#events">Events 2024</a>
+		<a href="#aniversary">20th Aniversary</a>
+		<a href="#navratri">Navratri Mahothsavam</a>
+		<a href="#homam">Homam</a>
+		<a href="#donations">Donations</a>
+		<a href="#about">About</a>
+        <a href="#contact">Contact us</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="overlay">
+            <h1>Sri Vijaya Ganapathi</h1>
+            <p>Devasthanam and Trust</p>
+        </div>
+    </section>
+	
+	<section id="announcements">
+        <div class="overlay">
+            <h1>Announcements</h1>
+			<ul>
+				<li><a href="#aniversary">We are happy to announce the temple’s 20th aniversary celebrations this year</a></li>
+				<li><a href="#events">Events and timeline for 2024 are now published</a></li>
+				<li><a href="#navratri">Navaratri Mahothsavam updates [Click here]</a></li>
+				<li><a href="#homam">Sri Lakshmi Ganapathi Homam updates [Click here]</a></li>
+			</ul>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events">
+        <div class="overlay">
+            <h1>Events 2024</h1>
+            
+			
+			 <table>
+        <thead>
+            <tr>
+                <th>Event Name</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Navaratri Mahothsavam</td>
+                <td>7th - 15th Sep 2024</td>
+            </tr>
+            <tr>
+                <td>Sri Laskhmi Ganapathi Homam</td>
+                <td>14th Sep 2024</td>
+            </tr>
+            <tr>
+                <td>Annadanam & Vasthra danam for couples</td>
+                <td>15th Sep 2024</td>
+            </tr>
+        </tbody>
+    </table>
+			
+        </div>
+    </section>
+	
+	<!-- Aniversary Section -->
+    <section id="aniversary">
+        <div class="overlay">
+            <h1>20th Aniversary Celebrations</h1>
+            <p>Stay Tuned.</p>
+        </div>
+    </section>
+
+	<!-- Navratri Section -->
+    <section id="navratri">
+        <div class="overlay">
+            <h1>Navratri Mahotsavam 2024</h1>
+            
+			<div class="gallery">
+        <!-- Image 1 -->
+        <div class="gallery-item">
+            <img src="images/Sri Vijaya Ganapathi.png" alt="Image 1">
+            <p class="caption">Day 1</p>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="gallery-item">
+            <img src="path-to-image2.jpg" alt="Image 2">
+            <p class="caption">Day 2</p>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="gallery-item">
+            <img src="path-to-image3.jpg" alt="Image 3">
+            <p class="caption">Day 3</p>
+        </div>
+
+        <!-- Image 4 -->
+        <div class="gallery-item">
+            <img src="path-to-image4.jpg" alt="Image 4">
+            <p class="caption">Day 4</p>
+        </div>
+
+        <!-- Image 5 -->
+        <div class="gallery-item">
+            <img src="path-to-image5.jpg" alt="Image 5">
+            <p class="caption">Day 5</p>
+        </div>
+
+        <!-- Image 6 -->
+        <div class="gallery-item">
+            <img src="path-to-image6.jpg" alt="Image 6">
+            <p class="caption">Day 6</p>
+        </div>
+
+        <!-- Image 7 -->
+        <div class="gallery-item">
+            <img src="path-to-image7.jpg" alt="Image 7">
+            <p class="caption">Day 7</p>
+        </div>
+
+        <!-- Image 8 -->
+        <div class="gallery-item">
+            <img src="path-to-image8.jpg" alt="Image 8">
+            <p class="caption">Day 8</p>
+        </div>
+
+        <!-- Image 9 -->
+        <div class="gallery-item">
+            <img src="path-to-image9.jpg" alt="Image 9">
+            <p class="caption">Day 9</p>
+        </div>
+    </div>
+			
+        </div>
+    </section>
+
+	<!-- Homam Section -->
+    <section id="homam">
+        <div class="overlay">
+            <h1>Sri Lakshmi Ganapathi Homam</h1>
+            <p>Om Gam Ganapathaye Namaha</p>
+        </div>
+    </section>
+	
+	<!-- Donations Section -->
+    <section id="donations">
+        <div class="overlay">
+            <h1>Donations</h1>
+            <p>For donations please use the QR code</p>
+				<img src="images/PhonePeQR.png" alt="Captioned Image" class="center" width="400">
+				<p class="caption">Qr code</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="overlay">
+            <h1>The Story</h1>
+            <p>Established in 2003.</p>
+			<p>We perform Navaratri mahothsavam along with Sri lakshmi Ganapathi homam followed by annadanam every year</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="overlay">
+            <h1>Contact Us</h1>
+			
+			<h2>Address</h2>
+            <p>9-6-87, Sivajipalem, Visakhapatnam, 530017, AP</p>
+			
+			<h2>Phone</h2>
+            <p>8328160666</p>
+			
+			<h2>Email</h2>
+            <p>srivijayaganapathitrust@gmail.com</p>
+			
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
