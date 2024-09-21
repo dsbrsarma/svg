@@ -14,7 +14,7 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            background: linear-gradient(to right, #6dd5ed, #2193b0);
+
             color: white;
             scroll-behavior: smooth;
         }
@@ -76,6 +76,7 @@
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
+			text-align: left;
 		}
 		
 		
@@ -135,6 +136,46 @@
             padding: 50px;
             border-radius: 10px;
         }
+		
+		
+		/* Home image */
+		
+		
+		.home-image {
+		width: 300px;
+		height: 200px;
+		
+		object-fit: contain;
+		
+	  }
+		
+		
+		/* Navratri gallery */
+
+		.gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .gallery-item {
+            margin: 10px;
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 150px; /* Set image width */
+            height: 200px; /* Set image height */
+            object-fit: contain; /* Adjust image fit */
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
 
         /* Footer Styling */
         footer {
@@ -173,12 +214,13 @@
         <div class="overlay">
             <h1>Sri Vijaya Ganapathi</h1>
             <p>Devasthanam and Trust</p>
+			<img src="images/Sri Vijaya Ganapathi.png" class="home-image">
         </div>
     </section>
 	
 	<section id="announcements">
         <div class="overlay">
-            <h1>Announcements</h1>
+            <h1 align ="center">Announcements</h1>
 			<ul>
 				<li>We are happy to announce the temple’s 20th aniversary celebrations this year<a href="#aniversary">[Click here]</a></li>
 				<li>Events and timeline for 2024 are now published<a href="#events">[Click here]</a></li>
@@ -224,7 +266,13 @@
     <section id="aniversary">
         <div class="overlay">
             <h1>20th Aniversary Celebrations</h1>
-            <p>Stay Tuned.</p>
+            
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/Vl3ITlCad_A?si=pu2_eHNAYFMN3HAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				
+				
+		<div class='embedsocial-instagram' data-ref="61c56499aa8ebdcd60db28c1dc6b8f8b5dcdcf2e"><a class="feed-powered-by-es" href="https://embedsocial.com/social-media-aggregator/" target="_blank" title="Social media aggregator">Social media aggregator<span>→</span></a></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/in.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialInstagramScript"));</script>
+
+				
         </div>
     </section>
 
@@ -234,69 +282,66 @@
             <h1>Navratri Mahotsavam 2024</h1>
             
 			<div class="gallery">
-        <!-- Image 1 -->
-        <div class="gallery-item">
-            <img src="images/Sri Vijaya Ganapathi.png" alt="Image 1">
-            <p class="caption">Day 1</p>
-        </div>
+			<!-- First row with 5 images -->
+				<div class="row">
+					<div class="gallery-item">
+						<img src="images/Sri Vijaya Ganapathi.png" alt="Image 1">
+						<p>Day 1</p>
+					</div>
+					<div class="gallery-item">
+						<img src="images/Sri Vijaya Ganapathi.png" alt="Image 2">
+						<p>Day 2</p>
+					</div>
+					<div class="gallery-item">
+						<img src="images/Sri Vijaya Ganapathi.png" alt="Image 3">
+						<p>Day 3</p>
+					</div>
+					<div class="gallery-item">
+						<img src="images/Sri Vijaya Ganapathi.png" alt="Image 4">
+						<p>Day 4</p>
+					</div>
+					<div class="gallery-item">
+						<img src="images/Sri Vijaya Ganapathi.png" alt="Image 5">
+						<p>Day 5</p>
+					</div>
+				</div>
 
-        <!-- Image 2 -->
-        <div class="gallery-item">
-            <img src="path-to-image2.jpg" alt="Image 2">
-            <p class="caption">Day 2</p>
-        </div>
-
-        <!-- Image 3 -->
-        <div class="gallery-item">
-            <img src="path-to-image3.jpg" alt="Image 3">
-            <p class="caption">Day 3</p>
-        </div>
-
-        <!-- Image 4 -->
-        <div class="gallery-item">
-            <img src="path-to-image4.jpg" alt="Image 4">
-            <p class="caption">Day 4</p>
-        </div>
-
-        <!-- Image 5 -->
-        <div class="gallery-item">
-            <img src="path-to-image5.jpg" alt="Image 5">
-            <p class="caption">Day 5</p>
-        </div>
-
-        <!-- Image 6 -->
-        <div class="gallery-item">
-            <img src="path-to-image6.jpg" alt="Image 6">
-            <p class="caption">Day 6</p>
-        </div>
-
-        <!-- Image 7 -->
-        <div class="gallery-item">
-            <img src="path-to-image7.jpg" alt="Image 7">
-            <p class="caption">Day 7</p>
-        </div>
-
-        <!-- Image 8 -->
-        <div class="gallery-item">
-            <img src="path-to-image8.jpg" alt="Image 8">
-            <p class="caption">Day 8</p>
-        </div>
-
-        <!-- Image 9 -->
-        <div class="gallery-item">
-            <img src="path-to-image9.jpg" alt="Image 9">
-            <p class="caption">Day 9</p>
-        </div>
-    </div>
-			
+			<!-- Second row with 4 images -->
+				<div class="row">
+					<div class="gallery-item">
+						<img src="images/Sri Vijaya Ganapathi.png" alt="Image 6">
+						<p>Day 6</p>
+					</div>
+					<div class="gallery-item">
+						<img src="images/Sri Vijaya Ganapathi.png" alt="Image 7">
+						<p>Day 7</p>
+					</div>
+					<div class="gallery-item">
+						<img src="images/Sri Vijaya Ganapathi.png" alt="Image 8">
+						<p>Day 8</p>
+					</div>
+					<div class="gallery-item">
+						<img src="images/Sri Vijaya Ganapathi.png" alt="Image 9">
+						<p>Day 9</p>
+					</div>
+				</div>
+			</div>
+		
         </div>
     </section>
 
 	<!-- Homam Section -->
     <section id="homam">
         <div class="overlay">
-            <h1>Sri Lakshmi Ganapathi Homam</h1>
-            <p>Om Gam Ganapathaye Namaha</p>
+            <h1> Sri Lakshmi Ganapathi Homam </h1>
+            <h2>Om Gam Ganapathaye Namaha</h2>
+			
+			<video width="640" height="360" controls>
+			  <source src="videos/homam.mp4" type="video/mp4" >
+			  
+			</video>
+
+			
         </div>
     </section>
 	
